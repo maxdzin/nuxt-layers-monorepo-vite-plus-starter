@@ -1,0 +1,19 @@
+{
+  "name": "@org/tooling",
+  "version": "0.0.1",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    "./stylelint/config": "./stylelint/config/index.ts"
+  },
+  "devDependencies": {
+    "stylelint": "catalog:tooling",
+    "stylelint-config-standard": "catalog:tooling",
+    "stylelint-config-standard-vue": "catalog:tooling",
+    "typescript": "catalog:"
+  }
+}

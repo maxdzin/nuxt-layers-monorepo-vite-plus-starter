@@ -1,0 +1,55 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "extends": ["github>nuxt/renovate-config-nuxt"],
+
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+
+  "packageRules": [
+    {
+      "matchDepTypes": ["resolutions"],
+      "enabled": false
+    },
+    {
+      "groupName": "nuxt-modules",
+      "groupSlug": "nuxt-modules",
+      "matchPackageNames": ["@nuxt/**", "@nuxtjs/**", "nuxt-**"],
+      "schedule": ["* * * * *"]
+    },
+    {
+      "groupName": "vite",
+      "groupSlug": "vite",
+      "matchPackageNames": ["vite", "vite-plus"],
+      "schedule": ["* * * * *"]
+    },
+    {
+      "groupName": "vue",
+      "groupSlug": "vue",
+      "matchPackageNames": [
+        "vue",
+        "vue-router",
+        "pinia",
+        "@pinia/**",
+        "@vueuse/**",
+        "vue-tsc"
+      ],
+      "schedule": ["* * * * *"]
+    },
+    {
+      "groupName": "testing",
+      "groupSlug": "testing",
+      "matchPackageNames": [
+        "vitest",
+        "@nuxt/test-utils",
+        "@vue/test-utils",
+        "happy-dom",
+        "playwright-core"
+      ],
+      "schedule": ["* * * * *"]
+    }
+  ],
+
+  "postUpdateOptions": ["pnpmDedupe"]
+}

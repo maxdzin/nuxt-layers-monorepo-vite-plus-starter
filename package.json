@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-layers-monorepo-vite-plus-starter",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A starter for creating Nuxt layer-based monorepo with Vite+.",
+  "keywords": [
+    "layer",
+    "monorepo",
+    "nuxt",
+    "vite+"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "ready": "vp check && vp run -r test && vp run -r build",
+    "dev": "vp run website#dev",
+    "prepare": "vp config && vp run prepare:layers",
+    "prepare:layers": "vp run --filter './layers/*' dev:prepare",
+    "lint:style": "vp run -r lint:style",
+    "lint:style-fix": "vp run -r lint:style-fix"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "@commitlint/types": "^21.0.1",
+    "@e18e/eslint-plugin": "^0.5.1",
+    "@nuxt/test-utils": "catalog:testing",
+    "@org/tooling": "workspace:*",
+    "eslint-plugin-regexp": "^3.1.0",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.8.0",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": ">=24.14.0",
+    "pnpm": ">=11"
+  },
+  "packageManager": "pnpm@11.8.0"
+}

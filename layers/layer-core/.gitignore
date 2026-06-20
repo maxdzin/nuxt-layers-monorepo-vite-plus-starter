@@ -1,0 +1,24 @@
+node_modules
+*.log
+.nuxt
+nuxt.d.ts
+.output
+.data
+.env
+framework
+dist
+.DS_Store
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Local History
+.history
+
+# Testing
+coverage/
+reports/
+playwright-report/
+test-results/

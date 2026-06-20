@@ -1,0 +1,38 @@
+# Node dependencies
+node_modules
+.pnpm-store
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local History
+.history
+
+# Logs
+logs
+*.log
+pnpm-debug.log*
+
+# AI agent worktrees
+.claude/worktrees/
+
+# Testing
+coverage/
+reports/
+playwright-report/
+test-results/
+
+# Output
+.vercel

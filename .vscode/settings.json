@@ -1,0 +1,120 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, pnpm*, .npmrc",
+    ".env": ".env.*"
+  },
+
+  "npm.scriptRunner": "vp",
+  "oxc.fmt.configPath": "./vite.config.ts",
+
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "explicit"
+  },
+
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[vue-html]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "tailwindcss",
+    "vue"
+  ],
+
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.svg": "html",
+    "*.xml": "html"
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "ui",
+    "active-class",
+    "inactive-class"
+  ],
+  "tailwindCSS.classFunctions": ["defineAppConfig"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "tailwindCSS.experimental.configFile": {
+    "apps/cms/app/assets/styles/main.css": "apps/cms/app/assets/styles/**",
+    "apps/website/app/assets/styles/main.css": "apps/website/app/assets/styles/**"
+  },
+
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.displayLanguage": "en",
+  "i18n-ally.enabledFrameworks": ["vscode", "vue", "vue-sfc"],
+  "i18n-ally.localesPaths": [
+    "apps/cms/i18n/locales",
+    "apps/website/i18n/locales"
+  ],
+
+  "cSpell.language": "en",
+  "cSpell.words": [
+    "composables",
+    "comark",
+    "consola",
+    "lucide",
+    "nuxt",
+    "nuxthub",
+    "nuxtjs",
+    "oxfmt",
+    "oxlint",
+    "pinia",
+    "tailwindcss",
+    "vite",
+    "vitest",
+    "voidzero",
+    "vueuse"
+  ]
+}

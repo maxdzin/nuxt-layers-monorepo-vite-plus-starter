@@ -1,0 +1,29 @@
+{
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+
+    "GitHub.vscode-pull-request-github",
+    "GitHub.remotehub",
+    "eamodio.gitlens",
+
+    "VoidZero.vite-plus-extension-pack",
+
+    "Vue.volar",
+    "Nuxt.mdc",
+    "Nuxtr.nuxt-vscode-extentions",
+
+    "bradlc.vscode-tailwindcss",
+
+    "oxc.oxc-vscode",
+    "DavidAnson.vscode-markdownlint",
+    "stylelint.vscode-stylelint",
+
+    "vitest.explorer",
+    "ms-playwright.playwright",
+
+    "Lokalise.i18n-ally",
+    "yoavbls.pretty-ts-errors",
+    "streetsidesoftware.code-spell-checker",
+    "pflannery.vscode-versionlens"
+  ]
+}

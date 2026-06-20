@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  CI:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [lts/*]
+
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: 🚧 Setup
+        uses: voidzero-dev/setup-vp@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 📦 Install dependencies
+        run: vp install --frozen-lockfile
+
+      - name: 📝 Check
+        run: vp check
+
+      - name: 🧪 Test
+        run: vp test
