@@ -25,7 +25,7 @@ const Configuration: UserConfig = {
   },
 
   // Ignore dependabot commit messages.
-  ignores: [(commit) => /^Bumps \[.+\]\(.+\) from .+ to .+\.$/m.test(commit)],
+  ignores: [(commit) => /^Bumps \[.+\]\(.+\) from .+ to .+\.$/mv.test(commit)],
 
   prompt: {
     settings: {
